@@ -30,7 +30,7 @@ namespace anti_public
                     if (!isPasswordPwned)
                     {
                         nonp++;
-                        File.AppendAllText("NonPublic.txt", line);
+                        File.AppendAllText("NonPublic.txt", line + "\n");
                     }
                     if (isPasswordPwned)
                     {
