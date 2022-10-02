@@ -1,0 +1,646 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Pitcher</name>
+    </assembly>
+    <members>
+        <member name="T:Pitcher.Throw">
+            <summary>
+            Represents a throw helper for exceptions
+            </summary>
+        </member>
+        <member name="M:Pitcher.Throw.This(System.Exception)">
+            <summary>
+            Throw the specified <see cref="T:System.Exception"/>
+            </summary>
+            <param name="exceptionToThrow">
+            The <see cref="T:System.Exception"/> to throw
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.When(System.Boolean,System.Exception)">
+            <summary>
+            Throw the specified <see cref="T:System.Exception"/> when the specified condition
+            is true
+            </summary>
+            <param name="condition">
+            The condition to determine whether to throw the <see cref="T:System.Exception"/>
+            or not
+            </param>
+            <param name="exceptionToThrow">
+            The <see cref="T:System.Exception"/> to throw
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.When(System.Boolean,System.Func{System.Exception})">
+            <summary>
+            Throw the specified <see cref="T:System.Exception"/> when the specified condition
+            is true
+            </summary>
+            <param name="condition">
+            The condition to determine whether to throw the <see cref="T:System.Exception"/>
+            or not
+            </param>
+            <param name="exceptionFactory">
+            The <see cref="T:System.Func`1"/> that creates the <see cref="T:System.Exception"/>
+            to throw
+            </param>
+        </member>
+        <member name="T:Pitcher.Throw.ArgumentNull">
+            <summary>
+            Represents a throw helper for <see cref="T:System.ArgumentNullException"/>
+            </summary>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.For(System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter name
+            </summary>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.For(System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter name
+            </summary>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentNullException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.When(System.Boolean,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter name when the specified condition is true
+            </summary>
+            <param name="condition">
+            The condition to determine whether to throw the <see cref="T:System.ArgumentNullException"/> or not
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.When(System.Boolean,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter name when the specified condition is true
+            </summary>
+            <param name="condition">
+            The condition to determine whether to throw the <see
+            cref="T:System.ArgumentNullException"/> or not
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentNullException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.WhenNull(System.Object,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter when the specified <see cref="T:System.Object"/> is null
+            </summary>
+            <param name="obj">
+            The <see cref="T:System.Object"/> to check for null
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.WhenNull(System.Object,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter when the specified <see cref="T:System.Object"/> is null
+            </summary>
+            <param name="obj">
+            The <see cref="T:System.Object"/> to check for null
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentNullException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.WhenNull(System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter when the specified <see cref="T:System.Object"/> is null
+            </summary>
+            <param name="obj">
+            The <see cref="T:System.Object"/> to check for null
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.WhenNull(System.String,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter when the specified <see cref="T:System.Object"/> is null
+            </summary>
+            <param name="obj">
+            The <see cref="T:System.Object"/> to check for null
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentNullException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.WhenNullOrEmpty(System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter when the specified <see cref="T:System.String"/> is null or empty
+            </summary>
+            <param name="obj">
+            The <see cref="T:System.String"/> to check for null or empty string
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.WhenNullOrEmpty(System.String,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter when the specified <see cref="T:System.String"/> is null or empty
+            </summary>
+            <param name="obj">
+            The <see cref="T:System.String"/> to check for null or empty string
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentNullException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.WhenNullOrWhiteSpace(System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter when the specified <see cref="T:System.String"/> is null, empty 
+            or whitespace
+            </summary>
+            <param name="obj">
+            The <see cref="T:System.String"/> to check for null, empty or whitespace
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.WhenNullOrWhiteSpace(System.String,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter when the specified <see cref="T:System.String"/> is null, empty 
+            or whitespace
+            </summary>
+            <param name="obj">
+            The <see cref="T:System.String"/> to check for null, empty or whitespace
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentNullException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.WhenNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter when the specified <see cref="T:System.Collections.Generic.IEnumerable`1"/> is null 
+            or empty
+            </summary>
+            <param name="obj">
+            The <see cref="T:System.Collections.Generic.IEnumerable`1"/> to check for null or emptiness
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentNull.WhenNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentNullException"/> for the specified
+            parameter when the specified <see cref="T:System.Collections.Generic.IEnumerable`1"/> is null 
+            or empty
+            </summary>
+            <param name="obj">
+            The <see cref="T:System.Collections.Generic.IEnumerable`1"/> to check for null or emptiness
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentNullException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentNullException"/>
+            </param>
+        </member>
+        <member name="T:Pitcher.Throw.ArgumentOutOfRange">
+            <summary>
+            Represents a throw helper for see <see cref="T:System.ArgumentOutOfRangeException"/>
+            </summary>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.For(System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> for the specified
+            parameter name
+            </summary>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:Pitcher.Throw.ArgumentOutOfRange"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.For(System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> for the specified
+            parameter name
+            </summary>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:Pitcher.Throw.ArgumentOutOfRange"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.When(System.Boolean,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentOutOfRangeException"/> for the specified
+            parameter name when the specified condition is true
+            </summary>
+            <param name="condition">
+            The condition to determine whether to throw the <see cref="T:System.ArgumentOutOfRangeException"/> or not
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.When(System.Boolean,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:System.ArgumentOutOfRangeException"/> for the specified
+            parameter name when the specified condition is true
+            </summary>
+            <param name="condition">
+            The condition to determine whether to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> or not
+            </param>
+            <param name="parameterName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenNegativeNumber(System.Int32,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a negative number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenNegativeNumber(System.Int32,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a negative number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenNegativeNumber(System.Double,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a negative number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenNegativeNumber(System.Double,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a negative number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenNegativeNumber(System.Single,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a negative number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenNegativeNumber(System.Single,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a negative number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenNegativeNumber(System.Decimal,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a negative number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenNegativeNumber(System.Decimal,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a negative number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenPositiveNumber(System.Int32,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            '</param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenPositiveNumber(System.Int32,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenPositiveNumber(System.Double,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            '</param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenPositiveNumber(System.Double,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenPositiveNumber(System.Single,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            '</param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenPositiveNumber(System.Single,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenPositiveNumber(System.Decimal,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            '</param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenPositiveNumber(System.Decimal,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenLessThan``1(``0,``0,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="mustBeMoreThan">
+            The value must be more than this
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            '</param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenLessThan``1(``0,``0,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="mustBeMoreThan">
+            The value must be more than this
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            '</param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenMoreThan``1(``0,``0,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="mustBeMoreThan">
+            The value must be more than this
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw.ArgumentOutOfRange.WhenMoreThan``1(``0,``0,System.String,System.String)">
+            <summary>
+            Throw an <see cref="T:Pitcher.Throw.ArgumentOutOfRange"/> when the specified value of
+            the specified parameter name is a positive number
+            </summary>
+            <param name="value">
+            The value of the parameter
+            </param>
+            <param name="mustBeMoreThan">
+            The value must be more than this
+            </param>
+            <param name="argumentName">
+            The name of the parameter to throw the <see
+            cref="T:System.ArgumentOutOfRangeException"/> for
+            </param>
+            <param name="message">
+            The message to include in the <see cref="T:System.ArgumentOutOfRangeException"/>
+            </param>
+        </member>
+        <member name="T:Pitcher.Throw`1">
+            <summary>
+            Represents a throw helper for exceptions
+            </summary>
+            <typeparam name="TException">
+            The type of <see cref="T:System.Exception"/> to throw
+            </typeparam>
+        </member>
+        <member name="M:Pitcher.Throw`1.Now">
+            <summary>
+            Throw the <see cref="T:System.Exception"/> of the specified type
+            </summary>
+        </member>
+        <member name="M:Pitcher.Throw`1.When(System.Boolean)">
+            <summary>
+            Throw the <see cref="T:System.Exception"/> of the specified type when the
+            specified condition is true
+            </summary>
+            <param name="condition">
+            The condition to determine whether to throw the <see cref="T:System.Exception"/>
+            or not
+            </param>
+        </member>
+        <member name="M:Pitcher.Throw`1.Create">
+            <summary>
+            Create a new <see cref="T:System.Exception"/> of the specified type
+            </summary>
+            <returns>
+            A new <see cref="T:System.Exception"/> of the specified type
+            </returns>
+        </member>
+    </members>
+</doc>
