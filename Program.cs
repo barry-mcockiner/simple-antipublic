@@ -43,7 +43,7 @@ namespace anti_public
                     Console.WriteLine(ex.Message);
                 }
 
-                Console.Title = $"Antipublic - by notaps#7777 | public: {pub} | private: {nonp} | retries: {error} ";
+                Console.Title = $"Antipublic - by barry-mcockiner | public: {pub} | private: {nonp} | retries: {error} ";
             }
         }
     }
