@@ -15,7 +15,7 @@ namespace anti_public
             int pub = 0;
             int nonp = 0;
             int error = 0;
-            Console.Title = $"Antipublic - by notaps#7777 | public: {pub} | private: {nonp}";
+            Console.Title = $"Antipublic - by barry-mcockiner | public: {pub} | private: {nonp}";
             Console.WriteLine("enter path to combo");
             string path = Console.ReadLine();
             Console.WriteLine("checking starts.");
